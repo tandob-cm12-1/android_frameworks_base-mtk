@@ -114,16 +114,16 @@ void Caches::initFont() {
 }
 
 void Caches::initExtensions() {
-    if (mExtensions.hasDebugMarker()) {
+    /*if (mExtensions.hasDebugMarker()) {
         eventMark = glInsertEventMarkerEXT;
 
         startMark = glPushGroupMarkerEXT;
         endMark = glPopGroupMarkerEXT;
-    } else {
+    } else {*/
         eventMark = eventMarkNull;
         startMark = startMarkNull;
         endMark = endMarkNull;
-    }
+    //}
 
     if (mExtensions.hasDebugLabel() && (drawDeferDisabled || drawReorderDisabled)) {
         setLabel = glLabelObjectEXT;
